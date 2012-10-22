@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>jQuery SimpleSlideshow Plugin - Example</title>
+		<link rel="stylesheet" type="text/css" href="simple-slideshow_style.css"/>
+		<script src="lib/jquery-1.7.2.min.js"></script>
+		<script src="lib/jquery.timer.js"></script>
+		<script src="simple-slideshow.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.simple-slideshow-frame').simpleSlideshow({
+					interval : 3000,
+					maxStretchFactor : 3,
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="simple-slideshow-frame">
+			<img class="simple-slideshow-slide" src="images/don.jpeg">
+			<img class="simple-slideshow-slide" src="images/pete.jpeg">
+			<img class="simple-slideshow-slide" src="images/peggy.jpeg">
+			<img class="simple-slideshow-slide" src="images/roger.jpeg">
+			<img class="simple-slideshow-slide" src="images/betty.jpeg">
+		</div>
+	</body>
+</html>
